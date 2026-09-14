@@ -3,7 +3,7 @@
 Personal portfolio for **Alghifari Rasyid Zola** (AI & Automation Engineer | Software Engineer).  
 Built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
 
-**Live:** [alghif-portfolio.vercel.app](https://alghifrz.vercel.app)
+**Live:** [alghifrz.vercel.app](https://alghifrz.vercel.app)
 
 ---
 
@@ -125,7 +125,7 @@ Full project list: `/projects`
 **Alghifari Rasyid Zola**  
 Computer Science · Pertamina University · GPA 3.92/4.00
 
-- Portfolio: [alghif-portfolio.vercel.app](https://alghifrz.vercel.app)
+- Portfolio: [alghifrz.vercel.app](https://alghifrz.vercel.app)
 - GitHub: [@alghifrz](https://github.com/alghifrz)
 - LinkedIn: [alghifarirasyidzola](https://www.linkedin.com/in/alghifarirasyidzola)
 
