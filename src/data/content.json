@@ -115,7 +115,7 @@
           "Integrated multiple data sources to provide comprehensive and accurate performance insights.",
           "Automated data processing and reporting workflows to improve efficiency."
         ],
-        "skill": ["Microsoft Power BI", "Microsoft Excel", "Google Looker Studio", "Google Sheets", "Relational Data Modelling", "Data Visualization", "Data Science", "Fullstack Development", "Web Development", "Artificial Intelligence (AI)", "RAG"]
+        "skill": ["Microsoft Power BI", "Google Looker Studio",  "Fullstack Development", "Web Development", "Artificial Intelligence (AI)", "RAG"]
       },
       {
         "title": "Data Analyst & Visualization",

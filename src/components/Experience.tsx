@@ -150,7 +150,7 @@ function MobileExperience() {
               </span>
             </div>
             <article className="relative flex w-full flex-col overflow-hidden rounded-[1.4rem] border border-white/10 bg-[#111] p-5">
-              <CardBody step={step} index={index} maxBullets={4} maxSkills={5} />
+              <CardBody step={step} index={index} maxBullets={4} maxSkills={8} />
             </article>
           </motion.div>
         ))}
