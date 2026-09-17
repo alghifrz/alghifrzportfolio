@@ -111,9 +111,9 @@
         "description": [
           "Developed a real-time dashboard to monitor agent performance and visualize key metrics.",
           "Built a web-based knowledge platform to support information sharing and agent learning.",
+          "Designed and implemented a web-based product knowledge chatbot (RAG)",
           "Integrated multiple data sources to provide comprehensive and accurate performance insights.",
-          "Automated data processing and reporting workflows to improve efficiency.",
-          "Collaborated with the team to enhance decision-making through data-driven analysis."
+          "Automated data processing and reporting workflows to improve efficiency."
         ],
         "skill": ["Microsoft Power BI", "Microsoft Excel", "Google Looker Studio", "Google Sheets", "Relational Data Modelling", "Data Visualization", "Data Science", "Fullstack Development", "Web Development", "Artificial Intelligence (AI)", "RAG"]
       },
