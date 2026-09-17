@@ -209,6 +209,7 @@
       { "name": "TailwindCSS", "logo": "SiTailwindcss", "color": "#06B6D4" },
       { "name": "Next.js", "logo": "SiNextdotjs", "color": "#FFFFFF" },
       { "name": "Laravel", "logo": "SiLaravel", "color": "#FF2D20" },
+      { "name": "Redis", "logo": "SiRedis", "color": "#D82C20" },
       { "name": "React.js", "logo": "FaReact", "color": "#61DAFB" },
       { "name": "Node.js", "logo": "FaNodeJs", "color": "#339933" },
       { "name": "MySQL", "logo": "SiMysql", "color": "#4479A1" },
