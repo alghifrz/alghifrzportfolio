@@ -206,6 +206,7 @@
       { "name": "PHP", "logo": "FaPhp", "color": "#777BB4" },
       { "name": "JavaScript", "logo": "SiJavascript", "color": "#F7DF1E" },
       { "name": "TypeScript", "logo": "SiTypescript", "color": "#3178C6" },
+      { "name": "Golang", "logo": "SiGo", "color": "#00ADD8" },
       { "name": "TailwindCSS", "logo": "SiTailwindcss", "color": "#06B6D4" },
       { "name": "Next.js", "logo": "SiNextdotjs", "color": "#FFFFFF" },
       { "name": "Laravel", "logo": "SiLaravel", "color": "#FF2D20" },
