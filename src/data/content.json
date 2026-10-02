@@ -296,8 +296,8 @@
       {
         "title": "DIUK Solution - AI-Orchestrated Conversational Automation Platform",
         "description": "DIUK Solution is a multi-tenant conversational operations platform for Indonesian service businesses. It connects WhatsApp Business Cloud to a live shared inbox, then uses a controlled AI agent—not free-form chat—to look up guests, check table availability, quote deposits, create reservations, and hand over to staff when needed. Unstructured documents (TXT, PDF, DOCX) are chunked, embedded, and retrieved with pgvector RAG during conversations, while structured tools remain authoritative for live menu, availability, and bookings. Operators manage areas, tables, menus, and reservation rules in one workspace, with CRM profiles, event-driven automations, campaign delivery, and analytics across conversations, bookings, and payments.",
-        "image": "diuk.png",
-        "technologies": ["Next.js", "Go", "Supabase", "FramerMotion", "PostgreSQL", "TypeScript", "TailwindCSS", "React.js", "Prisma ORM", "n8n", "LLM Provider", "Meta"],
+        "image": "diukk.png",
+        "technologies": ["Fullstack Development", "Next.js", "Golang", "Supabase", "FramerMotion", "PostgreSQL", "TypeScript", "TailwindCSS", "React.js", "Prisma ORM", "n8n", "LLM Provider", "Meta", "RAG", "Prompt Engineering"],
         "github": "",
         "demo": "https://www.diuksolution.com/",
         "cat": "Artificial Intelligence",
@@ -308,7 +308,7 @@
         "title": "Vrompt - AI Project Context Generator for Coding Agents",
         "description": "Vrompt is an AI project context generator that turns a rough idea into a validated ProjectSpec, then exports deterministic coding-agent rules. A guided interview captures users, stack, and constraints before any files are generated. From one reviewable spec, it renders ready-to-use context for popular coding agents so they start from a complete brief instead of a loose prompt.",
         "image": "vrompt.png",
-        "technologies": ["Fullstack Development", "Next.js", "TypeScript", "TailwindCSS", "React.js", "Prisma ORM", "Supabase", "n8n", "WhatsApp API", "LLM"],
+        "technologies": ["Next.js", "TypeScript", "TailwindCSS", "React.js", "Drizzle ORM", "Supabase", "LLM Provider", "Prompt Engineering"],
         "github": "https://github.com/alghifrz/vrompt",
         "demo": "https://vrompt-mu.vercel.app/",
         "cat": "Artificial Intelligence",
@@ -319,8 +319,8 @@
         "title": "RAISE UP - Automated Community Portal",
         "description": "A digital platform for public association where n8n powers an AI WhatsApp chatbot. Answering resident questions, auto-classifying complaints, and sending reminders/broadcasts. Backed by a Next.js + Prisma + Supabase admin and data layer.",
         "image": "raiseupp.png",
-        "technologies": ["Fullstack Development", "Next.js", "TypeScript", "TailwindCSS", "React.js", "Prisma ORM", "Supabase", "n8n", "WhatsApp API", "LLM"],
-        "github": "https://github.com/alghifrz/raise-up-AI-smart-management-",
+        "technologies": ["Fullstack Development", "Next.js", "Golang", "TypeScript", "TailwindCSS", "React.js", "Prisma ORM", "Supabase", "n8n", "WhatsApp API", "LLM"],
+        "github": "https://github.com/alghifrz/Raise-UP",
         "demo": "https://www.lebakasri.space/ ",
         "cat": "Artificial Intelligence",
         "featured": true,
@@ -336,6 +336,17 @@
         "cat": "Artificial Intelligence",
         "featured": true,
         "preview": "choptima"
+      },
+      {
+        "title": "Buana Medika Jaya",
+        "description": "Buana Medika Jaya is a catalog and lead-generation website for a medical equipment supplier serving individual customers, clinics, and healthcare facilities. Visitors browse products, read specifications, find store locations, and contact the business on WhatsApp instead of checking out online. A Next.js public site and admin panel use a Go API on Google Cloud Run, with product data and images stored in Supabase.",
+        "image": "buana.png",
+        "technologies": ["TypeScript", "Golang", "JavaScript", "Next.js", "React.js", "TailwindCSS"],
+        "github": "https://github.com/alghifrz/bmj-frontend",
+        "demo": "https://www.buanamedikajaya.com/",
+        "cat": "Web Development",
+        "featured": false,
+        "preview": "buana"
       },
       {
         "title": "Kasiko Coffee Official Website",
