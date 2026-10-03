@@ -397,8 +397,8 @@ export default function Activities() {
               <h3 className="text-lg font-semibold text-white md:text-xl">{content.certifications.title}</h3>
               <p className="mt-1 text-sm text-[var(--muted)]">
                 {hasCertPages
-                  ? "Verified credentials — swipe for more."
-                  : "Verified credentials, ready to open."}
+                  ? "Verified credentials."
+                  : "Verified credentials."}
               </p>
             </div>
             <div className="flex items-center gap-2">
@@ -424,9 +424,9 @@ export default function Activities() {
                   </button>
                 </div>
               )}
-              <span className="text-xs uppercase tracking-[0.16em] text-zinc-500">
+              {/* <span className="text-xs uppercase tracking-[0.16em] text-zinc-500">
                 {content.certifications.detail.length} badges
-              </span>
+              </span> */}
             </div>
           </div>
           <div
