@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 import content from "@/data/content.json";
 import Image from "next/image";
 import {
@@ -10,6 +10,8 @@ import {
   FaJava,
   FaPhp,
   FaGithub,
+  FaChevronLeft,
+  FaChevronRight,
   FaExternalLinkAlt,
   FaGlobe,
 } from "react-icons/fa";
@@ -86,6 +88,16 @@ function certTitle(name: string) {
   };
 }
 
+const CERTS_PER_PAGE = 8;
+
+function chunkItems<T>(items: T[], size: number) {
+  const pages: T[][] = [];
+  for (let i = 0; i < items.length; i += size) {
+    pages.push(items.slice(i, i + size));
+  }
+  return pages;
+}
+
 export default function Activities() {
   const [listView, setListView] = useState(false);
   const [activeSkill, setActiveSkill] = useState<string | null>(null);
@@ -107,6 +119,27 @@ export default function Activities() {
 
   const orgs = content.activities.detail;
   const education = content.education.detail;
+  const certPages = useMemo(
+    () => chunkItems(content.certifications.detail, CERTS_PER_PAGE),
+    []
+  );
+  const [certPage, setCertPage] = useState(0);
+  const certScrollerRef = useRef<HTMLDivElement>(null);
+  const hasCertPages = certPages.length > 1;
+
+  const goToCertPage = (index: number) => {
+    const next = Math.max(0, Math.min(index, certPages.length - 1));
+    const scroller = certScrollerRef.current;
+    if (!scroller) return;
+    scroller.scrollTo({ left: next * scroller.clientWidth, behavior: "smooth" });
+    setCertPage(next);
+  };
+
+  const onCertScroll = () => {
+    const scroller = certScrollerRef.current;
+    if (!scroller?.clientWidth) return;
+    setCertPage(Math.round(scroller.scrollLeft / scroller.clientWidth));
+  };
 
   return (
     <section id="activities" className="mx-auto max-w-6xl px-4 py-16 md:py-24">
@@ -357,54 +390,107 @@ export default function Activities() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.08 }}
-          className="nf-card flex min-h-[28rem] flex-col p-6 md:min-h-[32rem] md:p-8"
+          className="nf-card flex min-h-[28rem] flex-col overflow-hidden p-6 md:min-h-[32rem] md:p-8"
         >
           <div className="mb-5 flex items-end justify-between gap-4">
             <div>
               <h3 className="text-lg font-semibold text-white md:text-xl">{content.certifications.title}</h3>
-              <p className="mt-1 text-sm text-[var(--muted)]">Verified credentials, ready to open.</p>
+              <p className="mt-1 text-sm text-[var(--muted)]">
+                {hasCertPages
+                  ? "Verified credentials — swipe for more."
+                  : "Verified credentials, ready to open."}
+              </p>
             </div>
-            <span className="text-xs uppercase tracking-[0.16em] text-zinc-500">
-              {content.certifications.detail.length} badges
-            </span>
-          </div>
-          <div className="min-h-0 flex-1 overflow-y-auto pr-1">
-            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-            {content.certifications.detail.map((cert) => {
-              const { gold, title } = certTitle(cert.name);
-              return (
-                <a
-                  key={cert.link}
-                  href={cert.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-start gap-3 rounded-2xl border border-white/8 bg-white/3 p-4 transition hover:-translate-y-0.5 hover:border-white/16"
-                >
-                  <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-xl border border-white/10 bg-white/5 p-1.5">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={cert.logo} alt={cert.name} className="h-full w-full object-contain" />
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <div className="flex items-start justify-between gap-2">
-                      <h4 className="line-clamp-2 text-sm font-medium leading-snug text-white">{title}</h4>
-                      <FaExternalLinkAlt className="mt-0.5 h-3 w-3 shrink-0 text-zinc-600 transition group-hover:text-[var(--accent)]" />
-                    </div>
-                    <div className="mt-2 flex flex-wrap items-center gap-2">
-                      {gold && (
-                        <span className="rounded-full border border-amber-400/30 bg-amber-400/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-amber-300">
-                          Gold
-                        </span>
-                      )}
-                      <p className="text-[11px] text-[var(--muted)]">
-                        {cert.issuer} · {cert.date}
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              );
-            })}
+            <div className="flex items-center gap-2">
+              {hasCertPages && (
+                <div className="hidden items-center gap-1.5 sm:flex">
+                  <button
+                    type="button"
+                    onClick={() => goToCertPage(certPage - 1)}
+                    disabled={certPage === 0}
+                    className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/10 text-zinc-400 transition hover:border-white/25 hover:text-white disabled:cursor-not-allowed disabled:opacity-30"
+                    aria-label="Previous certifications"
+                  >
+                    <FaChevronLeft className="h-3 w-3" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => goToCertPage(certPage + 1)}
+                    disabled={certPage === certPages.length - 1}
+                    className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/10 text-zinc-400 transition hover:border-white/25 hover:text-white disabled:cursor-not-allowed disabled:opacity-30"
+                    aria-label="Next certifications"
+                  >
+                    <FaChevronRight className="h-3 w-3" />
+                  </button>
+                </div>
+              )}
+              <span className="text-xs uppercase tracking-[0.16em] text-zinc-500">
+                {content.certifications.detail.length} badges
+              </span>
             </div>
           </div>
+          <div
+            ref={certScrollerRef}
+            onScroll={onCertScroll}
+            className="flex w-full min-w-0 snap-x snap-mandatory overflow-x-auto overscroll-x-contain [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+          >
+            {certPages.map((page, pageIndex) => (
+              <div
+                key={pageIndex}
+                className="grid w-full min-w-0 shrink-0 grow-0 basis-full snap-start grid-cols-2 content-start gap-3"
+              >
+                {page.map((cert) => {
+                  const { gold, title } = certTitle(cert.name);
+                  return (
+                    <a
+                      key={cert.link}
+                      href={cert.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex min-w-0 items-start gap-2.5 rounded-2xl border border-white/8 bg-white/3 p-3 transition hover:-translate-y-0.5 hover:border-white/16"
+                    >
+                      <div className="relative h-11 w-11 shrink-0 overflow-hidden rounded-xl border border-white/10 bg-white/5 p-1.5">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src={cert.logo} alt={cert.name} className="h-full w-full object-contain" />
+                      </div>
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-start justify-between gap-2">
+                          <h4 className="line-clamp-2 break-words text-sm font-medium leading-snug text-white">{title}</h4>
+                          <FaExternalLinkAlt className="mt-0.5 h-3 w-3 shrink-0 text-zinc-600 transition group-hover:text-[var(--accent)]" />
+                        </div>
+                        <div className="mt-2 flex min-w-0 flex-wrap items-center gap-2">
+                          {gold && (
+                            <span className="rounded-full border border-amber-400/30 bg-amber-400/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-amber-300">
+                              Gold
+                            </span>
+                          )}
+                          <p className="min-w-0 truncate text-[11px] text-[var(--muted)]">
+                            {cert.issuer} · {cert.date}
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  );
+                })}
+              </div>
+            ))}
+          </div>
+          {hasCertPages && (
+            <div className="mt-4 flex items-center justify-center gap-2">
+              {certPages.map((_, index) => (
+                <button
+                  key={index}
+                  type="button"
+                  onClick={() => goToCertPage(index)}
+                  className={`h-1.5 rounded-full transition ${
+                    index === certPage ? "w-6 bg-[var(--accent)]" : "w-1.5 bg-white/20 hover:bg-white/35"
+                  }`}
+                  aria-label={`Go to certifications page ${index + 1}`}
+                  aria-current={index === certPage}
+                />
+              ))}
+            </div>
+          )}
         </motion.div>
       </div>
     </section>

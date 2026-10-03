@@ -232,6 +232,69 @@
     "title": "Certifications",
     "detail": [
       {
+        "name": "Enterprise Agentic AI",
+        "logo": "https://nexus.ingroupe.com/wp-content/uploads/2020/03/alibaba-cloud-logo.png",
+        "issuer": "Alibaba Cloud",
+        "date": "2026", 
+        "link": "https://drive.google.com/file/d/1Ywtk7_ZPw8yrVEVKSrD3NqpmK8VRrQ-m/view?usp=sharing"
+      },
+      {
+        "name": "Agentic AI Development with Qoder",
+        "logo": "https://elearning2.be.bisa.ai/course/media/2026-09-14_160541_course.png",
+        "issuer": "Bisa.AI",
+        "date": "2026", 
+        "link": "https://drive.google.com/file/d/1NotBDbZHlNBWCfpxyjP4S4q9xRW4_Gfx/view?usp=sharing"
+      },
+      {
+        "name": "Optimalisasi AI untuk produktivitas dengan Qwenwok",
+        "logo": "https://elearning2.be.bisa.ai/course/media/2026-09-14_160541_course.png",
+        "issuer": "Bisa.AI",
+        "date": "2026", 
+        "link": "https://drive.google.com/file/d/18AZJv3eQnW2-YUmzw57Y23zwz33ag5vC/view?usp=sharing"
+      },
+      {
+        "name": "Optimalisasi AI untuk produktivitas dengan Qwen",
+        "logo": "https://elearning2.be.bisa.ai/course/media/2026-09-14_160541_course.png",
+        "issuer": "Bisa.AI",
+        "date": "2026", 
+        "link": "https://drive.google.com/file/d/1e93Sktf_uFzjvdkNV3VEIOiw6sCxjz8k/view?usp=sharing"
+      },
+      {
+        "name": "Problem Solving (Basic) Certificate",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "issuer": "HackerRank",
+        "date": "2025", 
+        "link": "https://www.hackerrank.com/certificates/d28939cb1b21"
+      },
+      {
+        "name": "AI for Beginners",
+        "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/1280px-HP_logo_2012.svg.png?utm_source=id.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+        "issuer": "HP Life",
+        "date": "2025", 
+        "link": "https://www.life-global.org/certificate/3102324c-6c15-4196-b332-41ef076023c0"
+      },
+      {
+        "name": "Artificial Intelligence (AI)",
+        "logo": "https://www.wearepriority.com/wp-content/uploads/2019/02/samsung-logo-white.png",
+        "issuer": "PT Samsung Electronics Indonesia",
+        "date": "2024", 
+        "link": "https://drive.google.com/file/d/1q7s4IGcAk5Y2TAi1tju0-2Pe-uFGUtMo/view?usp=sharing"
+      },
+      {
+        "name": "Internet of Things (IoT)",
+        "logo": "https://www.wearepriority.com/wp-content/uploads/2019/02/samsung-logo-white.png",
+        "issuer": "PT Samsung Electronics Indonesia",
+        "date": "2024", 
+        "link": "https://drive.google.com/file/d/1kn6mm_agUBmpb9fRoyTQ_Vr3ebs8Xfbx/view?usp=sharing"
+      },
+      {
+        "name": "Coding and Programming",
+        "logo": "https://www.wearepriority.com/wp-content/uploads/2019/02/samsung-logo-white.png",
+        "issuer": "PT Samsung Electronics Indonesia",
+        "date": "2024", 
+        "link": "https://drive.google.com/file/d/1K1WWORz7dSx1eGzmsgL7oxJ28Nn8zfeZ/view?usp=sharing"
+      },
+      {
         "name": "Basic Python (Gold)",
         "logo": "https://api.badgr.io/public/badges/_iub8SRfTnOye29DymPA6A/image",
         "issuer": "Skilvul",
@@ -344,7 +407,7 @@
         "technologies": ["TypeScript", "Golang", "JavaScript", "Next.js", "React.js", "TailwindCSS"],
         "github": "https://github.com/alghifrz/bmj-frontend",
         "demo": "https://www.buanamedikajaya.com/",
-        "cat": "Web Development",
+        "cat": "Web Application",
         "featured": false,
         "preview": "buana"
       },
@@ -355,7 +418,7 @@
         "technologies": ["TypeScript", "JavaScript", "Next.js", "React.js", "TailwindCSS"],
         "github": "https://github.com/kasikocoffeeatery/adminKasiko",
         "demo": "http://kasikocoffee.com/",
-        "cat": "Web Development",
+        "cat": "Web Application",
         "featured": false,
         "preview": "kasiko"
       },
@@ -377,7 +440,7 @@
         "technologies": ["Looker Studio", "Google Sheets", "Relational Data Modelling", "DAX", "Power Query", "Data Science", "Data Visualization"],
         "github": "",
         "demo": "",
-        "cat": "Data Analysis",
+        "cat": "Data Analytics & Visualization",
         "featured": true,
         "preview": "escalation"
       },
@@ -388,7 +451,7 @@
         "technologies": ["Power BI", "Google Sheets", "Relational Data Modelling", "DAX", "Power Query", "Data Science", "Data Visualization"],
         "github": "",
         "demo": "",
-        "cat": "Data Analysis",
+        "cat": "Data Analytics & Visualization",
         "featured": true,
         "preview": "agentper"
       },
@@ -399,7 +462,7 @@
         "technologies": ["TypeScript", "JavaScript", "Next.js", "React.js", "TailwindCSS", "PostgreSQL", "Prisma ORM", "Google OAuth", "Vercel", "ESLint", "Supabase"],
         "github": "https://github.com/ccparagoncorp/customercare-web",
         "demo": "",
-        "cat": "Web Development",
+        "cat": "Web Application",
         "featured": true,
         "preview": "ccweb"
       },
@@ -410,7 +473,7 @@
         "technologies": ["TypeScript", "JavaScript", "Next.js", "React.js", "TailwindCSS", "Vercel", "ESLint", "Supabase"],
         "github": "https://github.com/alghifrz/HaiBanana",
         "demo": "https://www.haibanana.com/",
-        "cat": "Web Development",
+        "cat": "Web Application",
         "featured": true,
         "preview": "haibanana"
       },
@@ -421,7 +484,7 @@
         "technologies": ["TypeScript", "JavaScript", "Next.js", "React.js", "TailwindCSS", "PostgreSQL", "Prisma ORM", "Google OAuth", "Vercel", "ESLint", "Supabase"],
         "github": "https://github.com/dawaladev/dawala-app-guest",
         "demo": "https://www.wisataalamendah.com/",
-        "cat": "Web Development",
+        "cat": "Web Application",
         "featured": true,
         "preview": "dawala"
       },
@@ -432,7 +495,7 @@
         "technologies": ["Power BI", "Microsoft Excel", "Relational Data Modelling", "Data Visualization", "Data Science", "Data Analysis", "DAX", "Power Query"],
         "github": "",
         "demo": "",
-        "cat": "Data Analysis",
+        "cat": "Data Analytics & Visualization",
         "featured": true,
         "preview": "Sampah"
       },
@@ -454,7 +517,7 @@
         "technologies": ["TypeScript", "JavaScript", "Next.js", "React.js", "TailwindCSS", "PostgreSQL", "Prisma ORM", "Google OAuth", "Vercel", "Neon", "Cloudinary", "ESLint"],
         "github": "https://github.com/alghifrz/terra-furniture-lab",
         "demo": "https://www.terrafurniturelab.shop/",
-        "cat": "Web Development",
+        "cat": "Web Application",
         "featured": true,
         "preview": "Furniture"
       },
@@ -465,7 +528,7 @@
         "technologies": ["TypeScript", "JavaScript", "Next.js", "React.js", "TailwindCSS", "PostgreSQL", "Prisma ORM", "Google OAuth", "Vercel"],
         "github": "https://github.com/alghifrz/CompSci-QuizApp",
         "demo": "https://comp-sci-quiz-app.vercel.app/",
-        "cat": "Web Development",
+        "cat": "Web Application",
         "featured": true,
         "preview": "CompSci"
       },
@@ -476,7 +539,7 @@
         "technologies": ["Dart", "Flutter", "Java", "C++", "CMake", "Firebase", "OCRScan"],
         "github": "https://github.com/alghifrz/HalalLens"  ,
         "demo": "",
-        "cat": "Mobile Development",
+        "cat": "Mobile Application",
         "featured": true,
         "preview": "halal"
       },
@@ -487,7 +550,7 @@
         "technologies": ["TypeScript", "JavaScript", "Next.js", "React.js", "TailwindCSS", "FramerMotion"],
         "github": "https://github.com/alghifrz/Portfolio",
         "demo": "https://alghifrz.me",
-        "cat": "Web Development",
+        "cat": "Web Application",
         "featured": true,
         "preview": "Portfolio"
       },
@@ -498,7 +561,7 @@
         "technologies": ["Laravel", "JavaScript", "TailwindCSS", "MySQL", "PHP", "Blade", "CSS", "Figma", "Draw.io"],
         "github": "https://github.com/alghifrz/UPartner-WEB",
         "demo": "",
-        "cat": "Web Development",
+        "cat": "Web Application",
         "featured": true,
         "preview": "UPartner"
       },
@@ -509,7 +572,7 @@
         "technologies": ["Jupyter Notebook", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn"],
         "github": "https://github.com/alghifrz/DigitalExposome-Classification",
         "demo": "",
-        "cat": "Machine Learning",
+        "cat": "Machine Learning & Deep Learning",
         "featured": true,
         "preview": "Digital"
       },
@@ -520,7 +583,7 @@
         "technologies": ["Dart", "Flutter", "Java", "C++", "CMake", "C"],
         "github": "https://github.com/alghifrz/Productivity-App",
         "demo": "",
-        "cat": "Mobile Development",
+        "cat": "Mobile Application",
         "featured": true,
         "preview": "Productivity"
       },
@@ -531,7 +594,7 @@
         "technologies": ["JavaScript", "React.js", "Vite", "TailwindCSS", "React Router DOM", "JSON Server", "ESLint"],
         "github": "https://github.com/alghifrz/GoGrow-program-list-react",
         "demo": "",
-        "cat": "Web Development",
+        "cat": "Web Application",
         "featured": true,
         "preview": "Program"
       },
@@ -542,7 +605,7 @@
         "technologies": ["JavaScript", "React.js", "Vite", "ESLint", "CSS", "JSON Server"],
         "github": "https://github.com/alghifrz/GoGrow-todo-app",
         "demo": "",
-        "cat": "Web Development",
+        "cat": "Web Application",
         "featured": true,
         "preview": "Todo"
       },
@@ -553,7 +616,7 @@
         "technologies": ["Jupyter Notebook", "Python", "Pydub", "Librosa"],
         "github": "https://github.com/alghifrz/SpeechAccent-MFCC",
         "demo": "",
-        "cat": "Data Science",
+        "cat": "Machine Learning & Deep Learning",
         "featured": true,
         "preview": "Speech"
       },
@@ -564,7 +627,7 @@
         "technologies": ["Jupyter Notebook", "Python", "Scikit-learn", "Pandas", "Matplotlib", "Seaborn", "Random Forest Classifier"],
         "github": "https://github.com/alghifrz/Anemic-Classification",
         "demo": "",
-        "cat": "Machine Learning",
+        "cat": "Machine Learning & Deep Learning",
         "featured": true,
         "preview": "Anemic"
       },
@@ -575,7 +638,7 @@
         "technologies": ["Power BI", "Microsoft Excel", "Relational Data Modelling", "Data Visualization", "Data Science", "Data Analysis", "DAX", "Power Query"],
         "github": "",
         "demo": "",
-        "cat": "Data Analysis",
+        "cat": "Data Analytics & Visualization",
         "featured": true,
         "preview": "Bi"
       },
@@ -586,7 +649,7 @@
         "technologies": ["Laravel", "JavaScript", "TailwindCSS", "MySQL", "PHP", "Blade"],
         "github": "https://github.com/alghifrz/money-management-csdev",
         "demo": "",
-        "cat": "Web Development",
+        "cat": "Web Application",
         "featured": true,
         "preview": "Money"
       },
@@ -597,7 +660,7 @@
         "technologies": ["Laravel", "JavaScript", "TailwindCSS", "MySQL", "PHP", "Blade"],
         "github": "https://github.com/alghifrz/money-management-csdev",
         "demo": "",
-        "cat": "Web Development",
+        "cat": "Web Application",
         "featured": true,
         "preview": "Schedule"
       },
@@ -608,7 +671,7 @@
         "technologies": ["Laravel", "JavaScript", "TailwindCSS", "PHP", "Blade"],
         "github": "https://github.com/alghifrz/RealMadrid-BLOG",
         "demo": "",
-        "cat": "Web Development",
+        "cat": "Web Application",
         "featured": true,
         "preview": "RMBlog"
       },
@@ -619,7 +682,7 @@
         "technologies": ["Python", "PyQt", "Jupyter Notebook", "Pickle", "JSON", "Data Visualization", "Data Science", "Data Analysis"],
         "github": "",
         "demo": "",
-        "cat": "Software Development",
+        "cat": "Desktop Software",
         "featured": true,
         "preview": "SKK"
       }
