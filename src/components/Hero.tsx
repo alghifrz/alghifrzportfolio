@@ -140,6 +140,7 @@ const Hero = () => {
           </motion.a>
           <motion.a
             href={hero.buttons.portfolio.link}
+            target="_blank"
             rel="noopener noreferrer"
             className="nf-btn-secondary"
             whileHover={{ scale: 1.04 }}
