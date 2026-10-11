@@ -18,7 +18,7 @@
         "href": "/#experience"
       },
       {
-        "name": "Activities",
+        "name": "Activities & Skills",
         "href": "/#activities"
       },
       {
@@ -231,6 +231,13 @@
   "certifications": {
     "title": "Certifications",
     "detail": [
+      {
+        "name": "Sofware Engineer Certificate",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "issuer": "HackerRank",
+        "date": "2026", 
+        "link": "https://www.hackerrank.com/certificates/2131ba7a95ec"
+      },
       {
         "name": "Enterprise Agentic AI",
         "logo": "https://nexus.ingroupe.com/wp-content/uploads/2020/03/alibaba-cloud-logo.png",
